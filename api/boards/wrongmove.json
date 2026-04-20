@@ -1,0 +1,17 @@
+{
+  "is_white_turn": true,
+  "is_piece_chosen": false,
+  "board": [
+    [{"piece": 4, "color": "white"}, {"piece": 2, "color": "white"}, {"piece": 3, "color": "white"}, {"piece": 5, "color": "white"}, {"piece": 6, "color": "white"}, {"piece": 3, "color": "white"}, {"piece": 2, "color": "white"}, {"piece": 4, "color": "white"}],
+    [{"piece": 1, "color": "white"}, {"piece": 1, "color": "white"}, {"piece": 1, "color": "white"}, {"piece": 1, "color": "white"}, {"piece": 1, "color": "white"}, {"piece": 1, "color": "white"}, {"piece": 1, "color": "white"}, {"piece": 1, "color": "white"}],
+    [{}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}],
+    [{"piece": 1, "color": "black"}, {"piece": 1, "color": "black"}, {"piece": 1, "color": "black"}, {"piece": 1, "color": "black"}, {"piece": 1, "color": "black"}, {"piece": 1, "color": "black"}, {"piece": 1, "color": "black"}, {"piece": 1, "color": "black"}],
+    [{"piece": 4, "color": "black"}, {"piece": 2, "color": "black"}, {"piece": 3, "color": "black"}, {"piece": 5, "color": "black"}, {"piece": 6, "color": "black"}, {"piece": 3, "color": "black"}, {"piece": 2, "color": "black"}, {"piece": 4, "color": "black"}]
+  ],
+  "status": [
+    {"initial_square": [4, 1], "wrong_square": [4, 3], "description": "wrongmove"}
+  ]
+}

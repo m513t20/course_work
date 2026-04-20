@@ -25,6 +25,10 @@ class CalibrationPipeline:
         self._rows = 0
 
     def process_image(self, image: np.ndarray) -> None:
+        """Калибровка по изображению
+        Args:
+            image: изображение
+        """
         detection = self.detector.detect(image)
 
         if detection.ids is None:
@@ -56,6 +60,12 @@ class CalibrationPipeline:
         return self._grid != {}
 
     def get_board_data(self, image: np.ndarray) -> List[MarkerData]:
+        """Калибровка по изображению
+        Args:
+            image: изображение
+        Returns:
+            список маркеров
+        """
         warped = self.transformer.transform_board(image, self._transform_params, self._width, self._height)
         detection = self.detector.detect(warped)
         result = []
@@ -72,6 +82,12 @@ class CalibrationPipeline:
         return result
     
     def find_closest_grid(self, coordinate: np.ndarray) -> Tuple[int, int]:
+        """Поиск ближайшегр расположения на координатной сетке
+        Args:
+            coordinate: точка на изображении (центр маркера)
+        Returns:
+            координаты на сетке
+        """
         center = coordinate[0].mean(axis=0)
         min_dist = 1e10
         closest_grid=(1e10,1e10)
@@ -85,7 +101,13 @@ class CalibrationPipeline:
         
         return closest_grid
     
-    def get_json_data(self, image: np.ndarray) -> List[Dict]:
+    def get_json_data(self, image: np.ndarray) -> str:        
+        """Получение данных в json формате
+        Args:
+            image: изображениеы
+        Returns:
+            Данных в json формате
+        """
         result = {}
         result["rows"] = self._rows
         result["cols"] = self._cols

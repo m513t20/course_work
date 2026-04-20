@@ -1,0 +1,14 @@
+{
+  "rows": 8,
+  "cols": 10,
+  "matrix": [
+    {"id": 1, "cords": [7, 0], "turn": 0}, {"id": 1, "cords": [7, 1], "turn": 0},
+    {"id": 1, "cords": [7, 2], "turn": 0}, {"id": 1, "cords": [7, 3], "turn": 0},
+    {"id": 1, "cords": [7, 4], "turn": 0}, {"id": 1, "cords": [7, 5], "turn": 0},
+    {"id": 1, "cords": [7, 6], "turn": 0}, {"id": 1, "cords": [7, 7], "turn": 0},
+    {"id": 4, "cords": [5, 4], "turn": 0}, {"id": 2, "cords": [8, 1], "turn": 0},
+    {"id": 3, "cords": [8, 2], "turn": 0}, {"id": 5, "cords": [8, 3], "turn": 0},
+    {"id": 6, "cords": [8, 4], "turn": 0}, {"id": 3, "cords": [8, 5], "turn": 0},
+    {"id": 2, "cords": [8, 6], "turn": 0}, {"id": 4, "cords": [8, 7], "turn": 0}
+  ]
+}

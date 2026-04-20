@@ -20,6 +20,11 @@ print(f'calibration finished {pipeline._rows}x{pipeline._cols}')
 
 @app.get("/calibrate")
 async def calibrate_camera():
+    """Запуск калибровки
+    
+    Retruns:
+        Вычисленное разрешение рабочей поверхности
+    """
     cap = cv2.VideoCapture(0)
     _, image = cap.read()
     cv2.imwrite("calibration1.jpg", image)
@@ -37,6 +42,11 @@ async def calibrate_camera():
 
 @app.get("/data")
 async def process_step():
+    """Получение данных
+    
+    Retruns:
+        json данных рабочей поверхности стенда
+    """
     cap = cv2.VideoCapture(0)
     import time
     time.sleep(1)
@@ -49,6 +59,11 @@ async def process_step():
 
 @app.get("/image")
 async def process_step():
+    """Получение изображения
+    
+    Retruns:
+        изображение с камеры
+    """
     cap = cv2.VideoCapture(0)
     import time
     time.sleep(1)
